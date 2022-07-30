@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../images/stickers-asphalt-highway-with-road-markings-background.jpg.jpg");
+    background-repeat:no-repeat;
+    height: 600px;
+    background-size: 100% 600px;
+
+   
+}
+.car-1{
+   width: 350px;
+   height: 250px;
+   object-fit: contain;
+   margin-left: 1050px;
+   margin-top: 80px;
+   animation-name: car;
+   animation-duration: 4s;
+   animation-delay: 1s;
+   animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+   position: relative;
+}   
+.car-2{
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    position: relative;
+    animation-name: car2;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  
+    
+}
+@keyframes car{
+    from{
+        right: -280px;
+    }
+
+    to{
+        right: 1450px;
+        transition: all 4s linear;
+        -webkit-transition: all 4s linear;
+        -moz-transition: all 4s linear;
+        -ms-transition: all 4s linear;
+        -o-transition: all 4s linear;
+}
+}
+@keyframes car2{
+    from{
+        right: 280px;
+    }
+
+    to{
+        right: -1450px;
+        transition: all 4s linear;
+        -webkit-transition: all 4s linear;
+        -moz-transition: all 4s linear;
+        -ms-transition: all 4s linear;
+        -o-transition: all 4s linear;
+}
+}
